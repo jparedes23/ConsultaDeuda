@@ -4,12 +4,12 @@ from .models import Contribuyente,Direccion,CondContribuyente,ContribuyentePredi
 class ContribuyenteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Contribuyente
-        field = '__all__'
+        fields = '__all__'
     
 class DeudaSerializers(serializers.ModelSerializer):
     class Meta:
         model = Deuda
-        field ='__all__'
+        fields ='__all__'
 
 
 class RegistroUsuarioSerializer(serializers.ModelSerializer):

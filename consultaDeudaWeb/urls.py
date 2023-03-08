@@ -7,14 +7,14 @@ from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 
 schema_view = get_schema_view(
-    openapi.Info(
-        title="Deudas API",
-        default_version='v1',
-        description='Sistema de Consulta de Deudas',
-          terms_of_service="https://www.google.com/policies/terms/",
+   openapi.Info(
+      title="Ecommerce API",
+      default_version='v1',
+      description="Ecommerce para una tienda de zapatillas",
+      terms_of_service="https://www.google.com/policies/terms/",
       contact=openapi.Contact(email="contact@snippets.local"),
       license=openapi.License(name="BSD License"),
-    ),
+   ),
    public=True,
    permission_classes=[permissions.AllowAny],
 )
